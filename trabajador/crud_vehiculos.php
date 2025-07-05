@@ -56,7 +56,9 @@ $vehiculos = $pdo->query("SELECT * FROM vehiculo")->fetchAll(PDO::FETCH_ASSOC);
 <html lang="es">
 <head>
     <title>CRUD Vehículos - Trabajador</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body class="container mt-4">
     <h2>Gestión de Vehículos</h2>
