@@ -1,7 +1,4 @@
 <?php 
-include(__DIR__ . "/Extremos/Cabeza.php");
-include(__DIR__ . "/Extremos/pie.php");
-
 session_start();
 
 if (!isset($_SESSION['usuario'])) {
