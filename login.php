@@ -56,11 +56,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['db_origen'] = $resultado['origen'];
 
         switch ($resultado['usuario']['tipo_usuario_id']) {
-            case 1: header("Location: admin/crud_usuarios.php"); break;
-            case 2: header("Location: cliente/reservas.php"); break;
-            case 3: header("Location: trabajador/crud_vehiculos.php"); break;
+            case 1: header("Location: admin/menu_admin.php"); break;
+            case 2: header("Location: cliente/menu_cliente.php"); break;
+            case 3: header("Location: trabajador/menu_trabajador.php"); break;
             default: echo "Tipo de usuario desconocido."; exit;
         }
+
 
         exit;
     } else {
